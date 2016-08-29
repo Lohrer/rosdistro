@@ -4,22 +4,22 @@
 ---
 jenkins_binarydeb_job_timeout: 120
 jenkins_sourcedeb_job_timeout: 10
-jenkins_url: http://jenkins.ros.org
+jenkins_url: http://10.20.0.12:8080
 notifications:
   emails:
-  - ros-buildfarm-release@googlegroups.com
+  - mlohrer@dataspeedinc.com
   maintainers: true
 sync:
-  package_count: 150
+  package_count: 1
 targets:
   _config:
-    apt_target_repository: http://repos.ros.org/repos/building/
+    apt_target_repository: http://10.20.0.13/ubuntu/building/
   ubuntu:
-    saucy:
-      amd64:
-      i386:
+#    saucy:
+#      amd64:
+#      i386:
     trusty:
       amd64:
-      i386:
+#      i386:
 type: release-build
 version: 1

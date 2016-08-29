@@ -1,0 +1,27 @@
+%YAML 1.1
+# ROS distribution file
+# see REP 143: http://ros.org/reps/rep-0143.html
+---
+release_platforms:
+  ubuntu:
+  - trusty
+repositories:
+  qrcode_detection:
+    doc:
+      type: hg
+      url: https://mflohrer@bitbucket.org/DataspeedInc/qrcode_detection
+      version: default
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/Lohrer/qrcode_detection-release.git
+      version: 0.0.1
+    source:
+      type: hg
+      url: https://mflohrer@bitbucket.org/DataspeedInc/qrcode_detection
+      version: default
+    status: maintained
+type: distribution
+version: 2
+tags: 
+- dataspeed
